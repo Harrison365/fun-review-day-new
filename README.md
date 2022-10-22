@@ -1,3 +1,5 @@
+Test Test
+
 # JS Fundamentals Review Day
 
 Today you have several specifications to work through. You are expected to use TDD throughout in order to demonstrate your understanding of the questions and of good TDD practices (the tests for _Section 2 - Using Closures_ have been written for you). Have fun!
