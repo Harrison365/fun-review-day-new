@@ -5,7 +5,7 @@ const {
 } = require("./1-human-resources");
 const NCFruitBowl = require("../data/challenge1-data");
 
-describe.only("removeAgents()", () => {
+describe("removeAgents()", () => {
   it("returns an empty array if given an empty array", () => {
     const people = [];
     const expected = [];

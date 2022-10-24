@@ -11,10 +11,24 @@ function removeAgents(people) {
 
 // 2
 
-function makeNameTags() {}
+function makeNameTags(arr) {
+  let newArr = arr.map((person) => {
+    return `${person.title} ${person.forename} ${person.surname}, ${person.company}`;
+  });
+
+  return newArr;
+}
 
 // 3
 
-function createPoll() {}
+function createPoll(items) {
+  const poll = {};
+  items.forEach((item) => {
+    if (poll[item]) poll[item]++;
+    else poll[item] = 1;
+  });
+  console.log(items, poll);
+  return poll;
+}
 
 module.exports = { removeAgents, makeNameTags, createPoll };

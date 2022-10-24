@@ -1,6 +1,14 @@
-function invert() {}
+function invert(func) {
+  return function (...args) {
+    return !func(...args);
+  };
+}
 
-function flip() {}
+function flip(func) {
+  return function (...args) {
+    return func(...args.reverse());
+  };
+}
 
 function rememberMe() {}
 
