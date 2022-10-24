@@ -1,3 +1,5 @@
+//... = rest parameters
+
 function invert(func) {
   return function (...args) {
     return !func(...args);

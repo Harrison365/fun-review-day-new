@@ -27,7 +27,7 @@ function createPoll(items) {
     if (poll[item]) poll[item]++;
     else poll[item] = 1;
   });
-  console.log(items, poll);
+
   return poll;
 }
 
