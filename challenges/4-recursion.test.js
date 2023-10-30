@@ -76,6 +76,8 @@ describe("deeplyEquals", () => {
     expect(actual).toBe(false);
     actual = deeplyEquals("false", false);
     expect(actual).toBe(false);
+    actual = deeplyEquals(null, false);
+    expect(actual).toBe(false);
   });
   it("returns a boolean indicating whether two objects have the same key value pairs", () => {
     let input1 = { name: "Paul" };
